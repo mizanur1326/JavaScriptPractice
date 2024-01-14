@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>Input from User</h3>
+    <script>
+      let number = parseFloat(prompt("Enter your number"));
+      function factorial(number){
+          let product = 1;
+          while (number>1){
+              product *= number;
+              number--
+          }
+          document.write(product);
+      }
+      factorial(number);
+    </script>
+
+    <h3>Internal Value</h3>
+    <script>
+    //   function factorial(n) {
+    //     let product = 1;
+    //     while (n > 1) {
+    //       product *= n;
+    //       n--;
+    //     }
+    //     document.write(product);
+    //   }
+    //   factorial(5);
+    </script>
+  </body>
+</html>

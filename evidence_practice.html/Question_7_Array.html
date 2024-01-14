@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Adding Number from Array</h1>
+    <script>
+        const number = [5, 4, 20, 90, 70];
+        let sum = 0;
+        let multiply = 1;
+        for (let i=0; i<number.length; i++){  
+                sum += number[i];  
+                multiply *= number[i]             ;
+        }
+        document.write("<h3>Sum of Numbers</h3>")
+        document.write("Array Numbers = " + number + "</br>" + " Total Sum is = " + sum);
+        document.write("</br>")
+        document.write("<h3>Multiply of Numbers</h3>")
+        document.write("Array Numbers = " + number + "</br>" + " Total Multiply is = " + multiply);
+    </script>
+</body>
+</html>

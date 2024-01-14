@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        function findMax(){
+            let max = -1;
+            for (let i=0; i<arguments.length; i++){
+                if(arguments[i]>max){
+                    max = arguments[i]
+                }
+            }
+            return max;
+        }
+        document.write(findMax(10,150,20,10));
+    </script> -->
+    <h1> Finding Maximum Value</h1>
+    <script>
+        function findMax(){
+            let max = 0;
+            for (let i=0; i<arguments.length; i++){
+                if(arguments[i]>max){
+                    max = arguments[i]
+                }
+            }
+            return max;
+        }
+        //document.write(findMax(10,150,200,10));
+        let first = parseInt(prompt("Enter first number"));
+        let second = parseInt(prompt("Enter second number"));
+        let third = parseInt(prompt("Enter third number"));
+        let maximum = (findMax(first, second, third))
+        document.write(`Your numbers is = ${first} , ${second} , ${third} and Max number is: ${maximum}`)
+        
+    </script>
+    <h1>Finding Minimum Value</h1>
+    <script>
+        function findMin(){
+            let min = Infinity;
+            for (let i=0; i<arguments.length; i++){
+                if(arguments[i]<min){
+                    min = arguments[i]
+                }
+            }
+            return min;
+        }
+        //document.write(findMax(10,150,200,10));
+        let first1 = parseInt(prompt("Enter first number"));
+        let second1 = parseInt(prompt("Enter second number"));
+        let third1 = parseInt(prompt("Enter third number"));
+        let minimum = (findMin(first, second, third))
+        document.write(`Your numbers is = ${first1} , ${second1} , ${third1} and Min number is: ${minimum}`)
+        
+    </script>
+</body>
+</html>

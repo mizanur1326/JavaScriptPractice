@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let input = parseInt(prompt("Enter any number to check its prime or not:"));
+
+        function testPrime(){
+            let n = input.value;
+            if(n==0){
+                return "Please input a positive number without 0";
+            } else if(n==1){
+                return "1 is not a prime number"
+            } else if(n==2){
+                return "2 is a prime number"
+            } else{
+                for(let i=2; i<n; i++){
+                    if(n % i == 0){
+                        return n + "This is not prime number"
+                    }
+                }
+                return n + "This is prime number"
+            }
+        }
+        document.write();
+    </script>
+</body>
+</html>

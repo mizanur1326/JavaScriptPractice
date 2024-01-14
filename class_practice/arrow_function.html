@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Normal Function</h2>
+    <script>
+        function welcome(){
+            return "Hello World!"
+        }
+        const x = welcome()
+        document.write(x)
+    </script>
+    <h2>Arrow Function</h2>
+    <script>
+        const y = () => "Hello Const"
+        document.write(y())
+    </script>
+    <br><br>
+    <h3>Another Arrow Function</h3>
+    <script>
+        function welcome(name){
+            return name + " Hello!"
+        }
+        const a = welcome()
+        document.write(a)
+    </script>
+
+    <script>
+        const b = (name) => name + " Hello!"
+        document.write(b(Mizanur))
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <div>
+        <input type="number" id="number">
+        <input type="number1" id="number1">
+        <button type="button" onclick="sum()">SUM</button>
+        <button type="button" onclick="sub()">SUB</button>
+        <button type="button" onclick="multiply()">Multiply</button>
+        <button type="button" onclick="div()">Division</button>
+    </div>
+
+    <script>
+      function sum() {
+        let number = document.getElementById("number").value; 
+        let number1 = document.getElementById("number1").value; 
+        number = parseInt(number);
+        number1 = parseInt(number1);
+        let total = number + number1;
+        document.write(number + " + " + number1 + " = " + total);
+      }
+
+      function sub() {
+        let number = document.getElementById("number").value; 
+        let number1 = document.getElementById("number1").value; 
+        number = parseInt(number);
+        number1 = parseInt(number1);
+        let total = number - number1;
+        // document.write(total);
+        document.write(number + " - " + number1 + " = " + total);
+      }
+    </script>
+  </body>
+</html>

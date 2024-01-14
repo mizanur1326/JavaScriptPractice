@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        let student = {fname: "Masum", lname:"Hossain", age:26, address:"Jatrabari"};
+        function printProps(x){
+            for (let item in x){
+                //document.write(item + ": " + x[item] + "<br>")
+                console.log(`${item}: ${x[item]}\n`)
+            }
+        }
+        printProps(student)
+    </script> -->
+
+    <script>
+        function factorial(x){
+            if (x <= 1) return 1;
+            return x * factorial(x-1); //recursive
+        }
+        let n = prompt("Enter any number:")
+        document.write(factorial(n))
+    </script>
+</body>
+</html>

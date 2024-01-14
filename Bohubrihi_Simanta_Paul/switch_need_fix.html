@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Switch Statement</h3>
+    <form action="" name="form">
+        <h4>Choose any option</h4>
+        <ol style="list-style-type: lower-alpha;">
+            <li>Option 1</li>
+            <li>Option 2</li>
+            <li>Option 3</li>
+        </ol>
+        <input type="text" placeholder="choose any option like:a/b/c" name="optSel"> <input type="button" value="Select" onclick="showselected()">
+    </form>
+    <script>
+        function showselected(){
+        let userinput = document.form.optSel.value;
+        let output = userinput;
+        }
+        alert(output)
+    </script>
+</body>
+</html>

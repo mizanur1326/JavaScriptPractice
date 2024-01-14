@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Array Short</h3>
+    <script>
+        let students =["Mizanur Rahman", "Iqbal Molla", "Mehedi Hasan", "Rayhan Hossain", "Ali Ibne Imran"];
+        document.write(students);
+        document.write("<hr>");
+        students.sort()
+        document.write(students);
+
+        let output = "<ol>"
+            for (let i = 0; i<students.length; i++){
+                output += "<li>" + students[i] + "</li>";
+            }
+            output += "</ol>"
+            document.write(output);
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let MCQ = prompt("Enter Your MCQ Mark: ")
+        // let x = MCQ;
+        // document.write("Your MCQ Marks is " + x)
+        // document.write("<br>")
+        // let Descriptive = prompt("Enter Your Descriptive Mark: ")
+        // let y = Descriptive;
+        // document.write("Your Descriptive Marks is " + y)
+        // document.write("<br>")
+        // let Evidence = prompt("Enter Your Evidence Mark: ")
+        // let z = Evidence;
+        // document.write("Your Evidence Marks is " + z)
+        // document.write("<br>")
+        // document.write("<br>")
+
+        // if(x >= 80 && y >=60 && z>=40){
+        //     document.write("You are Passed");
+        // } else{
+        //     document.write("You are failed")
+        // }
+    </script>
+
+    <form action="" name="result">
+        <input type="text" name="mcq" placeholder="Enter MCQ mark"><br>
+        <input type="text" name="descriptive" placeholder="Enter descriptive mark"><br>
+        <input type="text" name="evidence" placeholder="Enter evidence mark"><br>
+        <button type="button" onclick="showResult()">Show Result</button>
+    </form>
+    <script>
+        function showResult(){
+            let mcq = document.result.mcq.value;
+            let descriptive = document.result.descriptive.value;
+            let evidence = document.result.evidence.value;
+            // document.write(mcq);
+            if(mcq>=80 && descriptive>=60 && evidence>=40){
+            document.write("You are Passed");
+            } else{
+            document.write("You are failed")
+            }
+        }
+    </script>
+</body>
+</html>

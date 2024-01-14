@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Window Location</h3>
+
+    <script>
+        let path = window.location.href;
+        document.write("<ins>HREF:</ins> " + path);
+        document.write("<br>")
+
+        let host = window.location.hostname;
+        document.write("<ins>Host Name:</ins>" + host);
+        document.write("<br>")
+
+        let domain = window.location.domain;
+        document.write("<ins>Domain Name:</ins>" + domain);
+        document.write("<br>")
+
+        let pathname = window.location.pathname;
+        document.write("<ins>Path Name:</ins>" + pathname);
+        document.write("<br>")
+
+        let port = window.location.port;
+        document.write("<ins>Port Name:</ins>" + port);
+        document.write("<br>")
+
+        let protocol = window.location.protocol;
+        document.write("<ins>Protocol Name:</ins>" + protocol);
+        document.write("<br>")
+
+    </script>
+</body>
+</html>

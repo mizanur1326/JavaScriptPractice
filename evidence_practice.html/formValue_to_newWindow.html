@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="Form">
+        <input type="text" name="fname" placeholder="First Name"><br>
+        <input type="text" name="lname" placeholder="Last Name"><br>
+        Gender:-
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female">Female<br>
+        <select name="district">
+            <option value="Dhaka">Dhaka</option>
+            <option value="Barisal">Barisal</option>
+            <option value="Chottogram">Chottogram</option>
+        </select> <br>
+        <textarea name="address" cols="30" rows="5" placeholder="Enter your address"></textarea><br>
+        Course List: <br>
+        <input type="checkbox" name="Graphics" value="Graphics" class="course"> Graphics
+        <input type="checkbox" name="Web" value="Web Application Development" class="course">Web Application Development 
+        <input type="checkbox" name="Networking" value="Networking" class="course"> Networking <br>
+        <button type="button" onclick="displayNewWindow()">Show in a new Window</button>
+    </form>
+
+    <script>
+        function displayNewWindow(){
+            let fname = document.Form.fname.value;
+            let lname = document.Form.lname.value;
+            let address = document.Form.address.value;
+            let gender = document.Form.gender.value;
+            let district = document.Form.district.value;
+            const subject = document.getElementsByClassName("course");
+            //alert(subject[0].value);
+
+             
+
+            let message = "";
+            message += "Full Name : " + fname + " " + lname + "<br>";
+            message += "Gender : " + gender + "<br>";
+            message += "District : " + district + "<br>"
+            message += "Address : " + address; + "<br>"
+            message += "Subject : " + subject;
+
+            let myWindow = window.open("", "", "Height=400, Width=300")
+            //myWindow.document.write("First Name is " + fname + "." + "Last Name is " + lname)
+            myWindow.document.write(message)
+        }
+    </script>
+</body>
+</html>

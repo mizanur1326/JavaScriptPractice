@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form action="" name="result">
+        <input type="text" name="mcq" placeholder="Enter MCQ Mark"><br>
+        <input type="text" name="des"  placeholder="Enter Descriptive Mark"><br>
+        <input type="text" name="eve"  placeholder="Enter Evidence Mark"><br>
+        <button type="button" onclick="ShowResult()">Show Result</button>
+    </form> -->
+
+    <form action="" name="result">
+        <input type="text" name="mcq" placeholder="Enter MCQ mark"><br>
+        <input type="text" name="descriptive" placeholder="Enter descriptive mark"><br>
+        <input type="text" name="evidence" placeholder="Enter evidence mark"><br>
+        <button type="button" onclick="showResult()">Show Result</button>
+    </form>
+    <script>
+        function showResult(){
+            let mcq = document.result.mcq.value;
+            let des = document.result.descriptive.value;
+            let eve = document.result.evidence.value;
+            //document.write(mcq);
+            if(mcq>=80 && descriptive>=60 && evidence>=40){
+            document.write("You are Passed");
+            } else{
+            document.write("You are failed")
+            }
+        }
+    </script>
+</body>
+</html>

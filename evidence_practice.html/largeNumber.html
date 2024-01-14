@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let number1 = prompt("Enter first Number");
+      let number2 = prompt("Enter Second Number");
+      let number3 = prompt("Enter Third Number");
+      let largest;
+      if (number1 >= number2 && number1 >= number3) {
+        largest = number1;
+      } else if (number2 >= number1 && number2 >= number3) {
+        largest = number2;
+      } else {
+        largest = number3;
+      }
+      alert("The largest number is " + largest);
+    </script>
+  </body>
+</html>

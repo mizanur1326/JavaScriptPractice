@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Pass Fail Detect</h3>
+    <script>
+        let mcq = parseInt(prompt("Enter your MCQ number")); //30 and above pass
+        let des = parseInt(prompt("Enter your Descriptive number")); //50 and above pass
+        let eve = parseInt(prompt("Enter your Evedence number")); //50 and above pass
+
+        if(mcq>=30 && des>=50 && eve >=50){
+            document.write("You are passed")
+        }else{
+            document.write("You are failed")
+        }
+    </script>
+</body>
+</html>

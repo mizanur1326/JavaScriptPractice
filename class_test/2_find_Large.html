@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const first = parseInt(prompt("Enter first number"));
+        const second = parseInt(prompt("Enter second number"));
+        const third = parseInt(prompt("Enter third number"));
+        let largest;
+
+        if (first >= second && first >= third){
+            largest = first;
+        } else if(second >= first && second >= third){
+            largest = second;
+        } else{
+            largest = third;
+        }
+        document.write("The largest number is " + largest);
+    </script>
+</body>
+</html>

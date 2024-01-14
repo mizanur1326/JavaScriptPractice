@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Numbers = [50, 40, 60, 30, 80];
+        document.write(Numbers)
+        document.write("<hr>")
+        Numbers.sort();
+        // document.write(Numbers)
+        // document.write("<hr>")
+
+        let output = "<ol>"
+        for(i=0; i<Numbers.length; i++){
+            output += "<li>" + Numbers[i] + "</li>";
+        }
+        output += "</ol>"
+        document.write(output)
+    </script>
+</body>
+</html>
