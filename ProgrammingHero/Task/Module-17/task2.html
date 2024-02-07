@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <script>
+            function calculateBMI(weight, height) {
+                // Convert height from cm to meters
+                let heightMeters = height / 100;
+
+                // Calculate BMI
+                let bmi = weight / (heightMeters * heightMeters);
+
+                return bmi;
+            }
+
+            function getHealthCategory(bmi) {
+                if (bmi < 18.5) {
+                    return "underweight";
+                } else if (bmi >= 18.5 && bmi <= 24.9) {
+                    return "normal";
+                } else if (bmi >= 25 && bmi <= 29.9) {
+                    return "overweight";
+                } else {
+                    return "obese";
+                }
+            }
+
+            // Example usage:
+            let weight = 70; // in kg
+            let height = 70; // in cm
+
+            let bmi = calculateBMI(weight, height);
+            let healthCategory = getHealthCategory(bmi);
+
+            console.log("Your BMI is:", bmi.toFixed(2));
+            console.log("You are", healthCategory + ".");
+
+        </script>
+    </div>
+</body>
+
+</html>

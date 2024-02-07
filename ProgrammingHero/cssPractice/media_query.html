@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .car{
+            border:2px solid green;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .car img{
+            width: 100%;
+        }
+
+        /* small device */
+        @media screen and (max-width: 576px) {
+            .container{
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        /* medium device */
+        @media screen and (min-width: 576px) and (max-width: 992px) {
+            .container{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- .container>.car*12>img[src="images/car.jpeg"]+h3{Car Item - $}+p{price: \$$00}+p>lorem20^btn{Buy Now} -->
+    <div class="container">
+        <div class="car">
+            <img src="images/car.jpeg" alt="">
+            <h3>Car Item - 1</h3>
+            <p>price: $100</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam quos unde obcaecati repellendus porro eligendi nostrum ab suscipit sunt est.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="car">
+            <img src="images/car.jpeg" alt="">
+            <h3>Car Item - 2</h3>
+            <p>price: $200</p>
+            <p>Minus consequatur soluta temporibus doloremque dolore reprehenderit provident animi tempore harum, quia rem. Nostrum illo a aliquid quis eius amet?</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="car">
+            <img src="images/car.jpeg" alt="">
+            <h3>Car Item - 3</h3>
+            <p>price: $300</p>
+            <p>Dignissimos, eligendi nihil vero ea molestias exercitationem itaque quod consequuntur repellendus qui, modi quibusdam labore magnam, necessitatibus quas illo aspernatur?</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="car">
+            <img src="images/car.jpeg" alt="">
+            <h3>Car Item - 4</h3>
+            <p>price: $400</p>
+            <p>Deserunt ex quisquam neque corporis perspiciatis, possimus totam eius quam nisi delectus, in animi, ut dolorum culpa impedit iusto doloremque.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="car">
+            <img src="images/car.jpeg" alt="">
+            <h3>Car Item - 5</h3>
+            <p>price: $500</p>
+            <p>Atque temporibus suscipit tempore quaerat vero? Recusandae veritatis iure quidem rerum aliquid labore dolores, odio odit accusantium in qui ex?</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="car">
+            <img src="images/car.jpeg" alt="">
+            <h3>Car Item - 6</h3>
+            <p>price: $600</p>
+            <p>Unde modi voluptas explicabo asperiores, dolorum adipisci fuga possimus. Dolorem eum vitae iusto dignissimos, nostrum repellat doloremque nemo accusamus libero?</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="car">
+            <img src="images/car.jpeg" alt="">
+            <h3>Car Item - 7</h3>
+            <p>price: $700</p>
+            <p>Expedita enim praesentium dolor quidem possimus accusantium sapiente sit veritatis, corporis explicabo tempora quos atque voluptas doloremque! Ea, est autem.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="car">
+            <img src="images/car.jpeg" alt="">
+            <h3>Car Item - 8</h3>
+            <p>price: $800</p>
+            <p>Soluta, ut natus officia magni vel quibusdam! Unde optio odio quod fuga eveniet repellendus aliquid rem laborum molestias alias. Eius.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="car">
+            <img src="images/car.jpeg" alt="">
+            <h3>Car Item - 9</h3>
+            <p>price: $900</p>
+            <p>Odit placeat doloremque dolorum id totam dignissimos sapiente distinctio consequatur quaerat officiis laudantium maxime quia nesciunt provident laborum, nostrum deleniti.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="car">
+            <img src="images/car.jpeg" alt="">
+            <h3>Car Item - 10</h3>
+            <p>price: $1000</p>
+            <p>Voluptatibus iure modi accusamus nam! Distinctio, placeat aliquam. Assumenda officia accusamus nihil quisquam nesciunt eaque est aut voluptatibus ea optio.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="car">
+            <img src="images/car.jpeg" alt="">
+            <h3>Car Item - 11</h3>
+            <p>price: $1100</p>
+            <p>Iste commodi molestiae neque. Suscipit laudantium repellendus maiores modi temporibus rerum asperiores eaque iste, cumque officia sit ut, accusantium nostrum?</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="car">
+            <img src="images/car.jpeg" alt="">
+            <h3>Car Item - 12</h3>
+            <p>price: $1200</p>
+            <p>Praesentium nemo totam eaque inventore dolores quisquam ipsam recusandae libero omnis. Deserunt sunt esse hic delectus magnam nulla assumenda consequatur.</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+</body>
+</html>
