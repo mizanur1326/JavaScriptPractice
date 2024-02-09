@@ -79,7 +79,7 @@ function monthlySavings(allPayments, livingCost){
         return "Earn More"
     }
 }
-console.log(monthlySavings([1000, 2000, 2500], 5000))
+// console.log(monthlySavings([1000, 2000, 2500], 5000))
 
 
 
