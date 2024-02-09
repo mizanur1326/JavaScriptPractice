@@ -63,7 +63,23 @@ function password(info) {
 
 // Task 5
 
-
+function monthlySavings(allPayments, livingCost){
+    for (let i = 0; i < allPayments.length; i++){
+        if(allPayments[i]> 3000){
+            allPayments[i] -= allPayments[i] * 2;
+        }
+    }
+    let total = 0;
+    for(let i in allPayments){
+        total += allPayments[i];
+    }
+    if(total > livingCost){
+        return "Savings is " + (total - livingCost);
+    }else{
+        return "Earn More"
+    }
+}
+console.log(monthlySavings([1000, 2000, 2500], 5000))
 
 
 
