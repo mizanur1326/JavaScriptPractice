@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="secret-info">Secret Info</h1>
+    <input id="del-confirm" type="text" placeholder="type DELETE te enable">
+    <button id="btn-delete" disabled>Delete</button>
+
+    <script>
+        document.getElementById('del-confirm').addEventListener('keyup', function(e){
+            const text = e.target.value;
+            const deleteBtn = document.getElementById('btn-delete')
+            // console.log(text)
+            if(text === 'DELETE'){
+                deleteBtn.removeAttribute('disabled')
+            }else{
+                deleteBtn.setAttribute('disabled', true)
+            }
+        })
+
+        document.getElementById('btn-delete').addEventListener('click', function(){
+            const secret = document.getElementById('secret-info');
+            secret.style.display = 'none'
+        })
+    </script>
+</body>
+</html>

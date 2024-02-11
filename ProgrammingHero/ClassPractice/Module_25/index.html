@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 onclick="console.log('I am clicked.')">DOM EVENTS</h1>
+    <button title="This is tooltip" onclick="console.log(5)">Click Here & See Console</button>
+    <button onclick="document.body.style.backgroundColor='red'">RED</button>
+
+
+    <!-- USE THIS ALWAYS -->
+    <button onclick="makeGreen()">Green</button>
+    <button id="makePink">Pink</button>
+    <button id="makeYellow">Yellow</button>
+    <button id="makeOrange">Orange</button>
+    <script>
+        // USE THIS ALWAYS
+        function makeGreen(){
+            document.body.style.backgroundColor='green';
+        }
+
+        const greenBtn = document.getElementById('makeYellow');
+        greenBtn.addEventListener('click', function makeYellowName(){
+            //function name na dileo hoy. na deowa better
+            document.body.style.backgroundColor = 'yellow';
+        })
+
+        // write by one line
+        document.getElementById('makeOrange').addEventListener('click', function(){
+            document.body.style.backgroundColor = 'orange'
+        })
+    
+
+        // this also work but not use this
+        const pinkBtn = document.getElementById('makePink');
+        pinkBtn.addEventListener('click', makePink)
+
+        function makePink(){
+            document.body.style.backgroundColor = 'pink'
+        }
+
+
+    </script>
+</body>
+</html>
