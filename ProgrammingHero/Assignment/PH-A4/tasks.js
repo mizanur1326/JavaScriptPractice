@@ -13,7 +13,7 @@ function calculateMoney(ticketSell){
     return "Baker vai has tk after Guard & Lunch Exp : " + calculate;
 }
 
-// console.log(calculateMoney(-10));
+// console.log(calculateMoney(10));
 
 // Task 2
 function checkName(name){
@@ -59,7 +59,7 @@ function password(info) {
     return password;
 }
 
-// console.log(password({ siteName: 'google', name: "Rahim", birthYear: 2000 }));
+console.log(password({ siteName: 'google', name: "Rahim", birthYear: 2000 }));
 
 // Task 5
 
@@ -79,7 +79,7 @@ function monthlySavings(allPayments, livingCost){
         return "Earn More"
     }
 }
-// console.log(monthlySavings([1000, 2000, 2500], 5000))
+console.log(monthlySavings([1000, 2000, 2500], 5000))
 
 
 

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Geometry Page</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main class="m-12">
+        <!-- Main content Container -->
+        <div class="flex flex-col md:flex-row">
+            <!-- Shape card Container -->
+            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                <!-- Triangle Card -->
+                <div class="card card-compact w-96 bg-base-100 shadow-xl p-6">
+                    <figure><img src="images/triangle.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Triangle</h2>
+                        <p class="text-center">Area = 0.5 X b X h</p>
+                        <div class="text-center">
+                            <input id="triangleBa se" class="w-24 text-2xl p-1 rounded-sm border-2 border-black" type="text" placeholder="b">
+                            <span class="mr-4 ml-2">cm</span>
+                            <input id="triangleHeight" class="w-24 text-2xl p-1 rounded-sm border-2 border-black" type="text" placeholder="h">
+                            <span class="mr-4 ml-2">cm</span>
+                        </div>
+                        <div>
+                            <h1 class="text-2xl">Triangle Area is : <span id="triangleArea"></span><span>cm<sup>2</sup></span></h1>
+                        </div>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary w-full" onclick="TriangleCalculate()">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- Area Card Container -->
+            <div class="w-96 border-2 border-gray-900 rounded-md">
+                <h2 class="border-red-900">Area Calculation</h2>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
