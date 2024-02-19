@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.font-inter {
+  font-family: "Inter", sans-serif;
+}
+.font-raleway {
+  font-family: "Raleway", sans-serif;
+}
+.banner-bg {
+  background-image: url(images/banner.png);
+  height: 550px;
+  background-size: cover;
+}
